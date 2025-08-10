@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import { Camera, Trophy, X } from "lucide-react";
 import GalleriBilder, { GalleriBild } from "./GalleriBilder";
 import GalleriVideor, { GalleriVideo } from "./GalleriVideor";
+import { useTranslation } from "react-i18next";
 
 type MediaTyp = "bild" | "video";
 
@@ -64,6 +65,8 @@ const galleriVideos: Omit<GalleriVideo, "beskrivning">[] = [
 ];
 
 const Galleri: React.FC = () => {
+  const { t } = useTranslation();
+
   const [modalÖppen, setModalÖppen] = useState(false);
   const [modalInnehåll, setModalInnehåll] = useState<{
     typ: MediaTyp;
@@ -95,9 +98,14 @@ const Galleri: React.FC = () => {
       <section id="gallery" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Galleri</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              {t("gallery.title", "Galleri")}
+            </h2>
             <p className="text-xl text-gray-600">
-              Utforska Loriks fotbollsresa genom bilder och videor
+              {t(
+                "gallery.description",
+                "Utforska Loriks fotbollsresa genom bilder och videor"
+              )}
             </p>
           </div>
 
@@ -112,13 +120,16 @@ const Galleri: React.FC = () => {
             >
               <Camera className="h-16 w-16 mx-auto mb-4 text-blue-600" />
               <h4 className="text-xl font-bold mb-2 text-gray-900">
-                Match bilder
+                {t("gallery.matchPhotos", "Match bilder")}
               </h4>
               <p className="text-gray-600 mb-4">
-                Behind-the-scenes från utveckling och övningar
+                {t(
+                  "gallery.matchPhotosDesc",
+                  "Behind-the-scenes från utveckling och övningar"
+                )}
               </p>
               <div className="text-sm text-blue-600 font-medium">
-                {galleriBilder.length}+ foton
+                {galleriBilder.length}+ {t("gallery.photos", "foton")}
               </div>
             </div>
 
@@ -131,13 +142,16 @@ const Galleri: React.FC = () => {
             >
               <Trophy className="h-16 w-16 mx-auto mb-4 text-yellow-600" />
               <h4 className="text-xl font-bold mb-2 text-gray-900">
-                Matchhöjdpunkter
+                {t("gallery.matchHighlights", "Matchhöjdpunkter")}
               </h4>
               <p className="text-gray-600 mb-4">
-                Bästa räddningar och viktiga matcher
+                {t(
+                  "gallery.matchHighlightsDesc",
+                  "Bästa räddningar och viktiga matcher"
+                )}
               </p>
               <div className="text-sm text-yellow-600 font-medium">
-                {galleriVideos.length}+ videor
+                {galleriVideos.length}+ {t("gallery.videos", "videor")}
               </div>
             </div>
           </div>
@@ -168,7 +182,7 @@ const Galleri: React.FC = () => {
             <button
               onClick={stängModal}
               className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors"
-              aria-label="Stäng modal"
+              aria-label={t("gallery.closeModal", "Stäng modal")}
             >
               <X className="h-8 w-8" />
             </button>

@@ -1,6 +1,9 @@
 import { Instagram, Shield, Mail } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -10,8 +13,8 @@ export default function Footer() {
               <Shield className="h-10 w-10 text-white" />
             </div>
             <div>
-              <span className="text-xl font-bold">Lorik Myftari</span>
-              <div className="text-sm text-gray-400">Elite målvakt</div>
+              <span className="text-xl font-bold">{t("footer.name")}</span>
+              <div className="text-sm text-gray-400">{t("footer.title")}</div>
             </div>
           </div>
 
@@ -29,7 +32,7 @@ export default function Footer() {
 
             <a
               href="mailto:Dona.1986@hotmail.com"
-              aria-label="Skicka e-post"
+              aria-label={t("footer.emailLabel")}
               className="text-gray-400 hover:text-white transition-transform transform hover:scale-110 cursor-pointer"
             >
               <Mail className="h-8 w-8" />
@@ -57,8 +60,8 @@ export default function Footer() {
         {/* Footer bottom text */}
         <div className="mt-8 pt-8 border-t border-gray-800 text-center">
           <p className="text-gray-400">
-            © {new Date().getFullYear()} Lorik Myftari. Alla rättigheter
-            förbehållna.
+            © {new Date().getFullYear()} Lorik Myftari.{" "}
+            {t("footer.rightsReserved")}
           </p>
         </div>
       </div>

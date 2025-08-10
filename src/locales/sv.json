@@ -1,0 +1,162 @@
+{
+    "home": "Hem",
+    "about": "Om Mig",
+    "meritsMenu": "Meriter",
+    "career": "Karriär",
+    "gallery": {
+        "title": "Galleri",
+        "description": "Utforska Loriks fotbollsresa genom bilder och videor",
+        "matchPhotos": "Matchbilder",
+        "matchPhotosDesc": "Behind-the-scenes från utveckling och övningar",
+        "matchHighlights": "Matchhöjdpunkter",
+        "matchHighlightsDesc": "Bästa räddningar och viktiga matcher",
+        "photosCount": "{{count}}+ foton",
+        "videosCount": "{{count}}+ videor",
+        "closeModal": "Stäng modal",
+        "zoomOutTitles": {
+            "gothiaSEF2025": "Gothia SEF 2025",
+            "criticalSave": "Kritisk räddning",
+            "focusedReady": "Fokuserad och redo",
+            "inGoalCenter": "I målets mitt",
+            "coachTalk": "Tränarsamtal",
+            "nextGoal": "Mot nästa mål",
+            "afterVictory": "Efter segern"
+        },
+        "videos": {
+            "titles": {
+                "ifkKristianstad": "IFK Göteborg - Kristianstad FC",
+                "ifkElfsborg": "IFK Göteborg - Elfsborg IF",
+                "ifkMjallby": "IFK Göteborg - Mjällby AIF",
+                "gaisIfk2024": "Gais - IFK Göteborg, 2024"
+            }
+        }
+    },
+    "aboutDetails": {
+        "title": "Om Lorik Myftari",
+        "description": "En engagerad och talangfull ung målvakt med stark vilja att utvecklas och nå framgång på elitnivå inom fotbollen.",
+        "cards": {
+            "playerOverAge": "Spelar över sin åldersklass",
+            "playerOverAgeDesc": "Endast 15 år gammal har Lorik etablerat sig i IFK Göteborgs U16-lag, där han visar prov på mognad och exceptionell skicklighet.",
+            "goalkeeper": "Målvakt i IFK Göteborg",
+            "goalkeeperDesc": "Som målvakt för IFK:s U16-lag visar Lorik konstant sina räddningsfärdigheter och ledarskap på planen.",
+            "futureGoals": "Framtidsmål",
+            "futureGoalsDesc": "Med en dröm om att bli professionell fotbollsspelare tränar Lorik målmedvetet varje dag för att nå den högsta nivån inom sporten."
+        },
+        "funFacts": {
+            "title": "Fakta om Lorik",
+            "reflexes": {
+                "title": "Snabba reflexer",
+                "desc": "Exceptionellt snabba reflexer som gör skillnad i avgörande ögonblick"
+            },
+            "development": {
+                "title": "Snabb utveckling",
+                "desc": "Lyckades reducera insläppta mål genom effektivt målvaktsspel"
+            },
+            "training": {
+                "title": "Utmärkt träningsdisciplin",
+                "desc": "Visar stort engagemang och disciplin i varje träning"
+            },
+            "passion": {
+                "title": "Passionerad",
+                "desc": "Brinner för fotboll och lagarbete"
+            }
+        }
+    },
+    "footer": {
+        "name": "Lorik Myftari",
+        "title": "Elite målvakt",
+        "emailLabel": "Skicka e-post",
+        "rightsReserved": "Alla rättigheter förbehållna."
+    },
+    "hero": {
+        "name": "Lorik Myftari",
+        "position": "Målvakt i IFK Göteborg.",
+        "age": "15 år",
+        "level": "U16-nivå",
+        "location": "Sverige",
+        "active": "AKTIV",
+        "readMore": "Läs mer",
+        "contactMe": "Kontakta mig",
+        "forwardPathTitle": "Vägen framåt",
+        "forwardPathDesc": "Jag är 15 år och spelar som målvakt i IFK Göteborgs U16-lag. Med erfarenhet från Gothia SEF och internationella turneringar tränar jag målmedvetet för att nå min fulla potential och göra skillnad på planen.",
+        "trophyTitle": "Uppåtgående Mästare",
+        "trophyDesc": "Från silver i Barcelona till Gothia SEF-mästare, en resa av engagemang och utveckling.",
+        "facts": {
+            "age": "År gammal",
+            "level": "Spelnivå",
+            "club": "Göteborg"
+        }
+    },
+    "highlights": {
+        "title": "Karriärhöjdpunkter",
+        "subtitle": "Viktiga milstolpar i fotbollsresan",
+        "milestones": [
+            {
+                "period": "2016–2023",
+                "title": "Spelade i Angered MBIK",
+                "description": "Startade fotbollskarriären vid 6 års ålder.",
+                "tag": "Karriärstart & Utveckling"
+            },
+            {
+                "period": "2023 (6 månader)",
+                "title": "Spelade i Skottsfint",
+                "description": "Tillbringade sex månader i klubben och utvecklade målvaktsegenskaperna.",
+                "tag": "Personlig utveckling"
+            },
+            {
+                "period": "2024",
+                "title": "Spelade i GAIS",
+                "description": "Tillbringade ett år i GAIS och vässade färdigheterna.",
+                "tag": "Erfarenhet"
+            },
+            {
+                "period": "2025",
+                "title": "Började i IFK Göteborg U16",
+                "description": "Inledde rollen som målvakt i IFK Göteborgs ungdomslag.",
+                "tag": "Ny milstolpe"
+            }
+        ]
+    },
+    "merits": {
+        "championTitle": "MÄSTARE",
+        "championDesc": "Startmålvakt i Gothia SEF 2025, som vi vann",
+        "grid": [
+            {
+                "tag": "INTERNATIONELLT",
+                "title": "Turnering i Barcelona",
+                "description": "Turnering i Barcelona vid 13 års ålder, vann silver",
+                "info": "13 år • Internationell erfarenhet"
+            },
+            {
+                "tag": "SERIE",
+                "title": "Svårserie Göteborg 2023",
+                "description": "3:a i svårserie Göteborg 2023",
+                "info": "Bronsmedalj • Regional tävling"
+            },
+            {
+                "tag": "SERIE",
+                "title": "Svårserie Göteborg 2024",
+                "description": "2:a i svårserie Göteborg 2024",
+                "info": "Silvermedalj • Förbättrad prestation"
+            },
+            {
+                "tag": "ELIT",
+                "title": "P16 Allsvenskan",
+                "description": "Deltagit i 5 P16 Allsvenska matcher vid 14 års ålder 2024",
+                "info": "Elit nivå • 14 år"
+            },
+            {
+                "tag": "UTTAGNING",
+                "title": "Göteborgs distriktslag",
+                "description": "Uttagen i Göteborgs distriktslag",
+                "info": "Regionalt erkännande • Elitnivå"
+            },
+            {
+                "tag": "AKTUELLT",
+                "title": "Ligacup P17 2025",
+                "description": "Startat 2 Ligacupmatcher i P17 2025",
+                "info": "Startmålvakt • 15 år"
+            }
+        ]
+    }
+}

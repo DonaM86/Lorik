@@ -1,21 +1,23 @@
 import { useState } from "react";
 import { Menu, X, Shield } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 type NavigationProps = {
   scrollToSection: (id: string) => void;
 };
 
 export default function Navigation({ scrollToSection }: NavigationProps) {
+  const { t } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeId, setActiveId] = useState("home");
 
+  // Lägg till id och nyckel för översättning
   const links = [
-    { id: "home", label: "Hem" },
-    { id: "about", label: "Om Mig" },
-    { id: "Meriter", label: "Meriter" },
-    { id: "highlights", label: "Karriär" },
-
-    { id: "gallery", label: "Galleri" },
+    { id: "home", labelKey: "home" },
+    { id: "about", labelKey: "about" },
+    { id: "merits", labelKey: "meritsMenu" },
+    { id: "career", labelKey: "career" },
+    { id: "gallery", labelKey: "gallery.title" },
   ];
 
   const handleClick = (id: string) => {
@@ -43,7 +45,7 @@ export default function Navigation({ scrollToSection }: NavigationProps) {
 
           {/* Desktop nav */}
           <div className="hidden md:flex space-x-6">
-            {links.map(({ id, label }) => (
+            {links.map(({ id, labelKey }) => (
               <button
                 key={id}
                 onClick={() => handleClick(id)}
@@ -54,7 +56,7 @@ export default function Navigation({ scrollToSection }: NavigationProps) {
                       : "text-gray-700 hover:text-blue-600 hover:shadow-md"
                   }`}
               >
-                {label}
+                {t(labelKey)}
               </button>
             ))}
           </div>
@@ -80,7 +82,7 @@ export default function Navigation({ scrollToSection }: NavigationProps) {
       {isMenuOpen && (
         <div className="md:hidden bg-white border-t border-gray-200 shadow-lg">
           <div className="flex flex-col px-4 pt-4 pb-6 space-y-3">
-            {links.map(({ id, label }) => (
+            {links.map(({ id, labelKey }) => (
               <button
                 key={id}
                 onClick={() => handleClick(id)}
@@ -91,7 +93,7 @@ export default function Navigation({ scrollToSection }: NavigationProps) {
                       : "text-gray-700 hover:bg-blue-50 hover:text-blue-600"
                   }`}
               >
-                {label}
+                {t(labelKey)}
               </button>
             ))}
           </div>

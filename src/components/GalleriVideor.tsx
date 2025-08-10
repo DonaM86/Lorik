@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Video } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export interface GalleriVideo {
   src: string;
@@ -15,6 +16,7 @@ interface Props {
 }
 
 const GalleriVideor: React.FC<Props> = ({ videor, öppnaModal }) => {
+  const { t } = useTranslation();
   const initialIndex = videor.findIndex((v) => v.utvald);
   const [storVideoIndex, setStorVideoIndex] = useState(
     initialIndex >= 0 ? initialIndex : 0
@@ -38,11 +40,10 @@ const GalleriVideor: React.FC<Props> = ({ videor, öppnaModal }) => {
       <div className="flex items-center justify-between mb-8">
         <h3 className="text-2xl font-bold text-gray-900 flex items-center">
           <Video className="h-6 w-6 mr-2 text-blue-600" />
-          Videor
+          {t("gallery.videos.title", "Videor")}
         </h3>
       </div>
 
-      {/* Stor video */}
       <div className="mb-8">
         <div className="relative aspect-video bg-gray-900 rounded-2xl overflow-hidden shadow-xl">
           <video
@@ -71,7 +72,6 @@ const GalleriVideor: React.FC<Props> = ({ videor, öppnaModal }) => {
         </div>
       </div>
 
-      {/* Miniatyrer */}
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6">
         {andraVideor.map((video) => {
           const originalIndex = videor.findIndex((v) => v === video);
@@ -81,7 +81,9 @@ const GalleriVideor: React.FC<Props> = ({ videor, öppnaModal }) => {
               key={originalIndex}
               className="relative aspect-video bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:scale-105 cursor-pointer"
               onClick={() => setStorVideoIndex(originalIndex)}
-              aria-label={`Spela video: ${video.titel}`}
+              aria-label={`${t("gallery.videos.playVideo", "Spela video")} ${
+                video.titel
+              }`}
             >
               <video
                 className="w-full h-full object-cover"

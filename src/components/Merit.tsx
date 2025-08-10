@@ -1,3 +1,6 @@
+import { useTranslation } from "react-i18next";
+import { MeritItem } from "../types"; // justera sökväg
+
 function TrophyIcon() {
   return (
     <svg
@@ -12,111 +15,50 @@ function TrophyIcon() {
   );
 }
 
-export default function Meriter() {
+export default function Merits() {
+  const { t } = useTranslation();
+
+  const gridItems = t("merits.grid", { returnObjects: true }) as MeritItem[];
+
   return (
-    <section id="Meriter" className="max-w-6xl mx-auto px-6 py-12">
-      {/* Championship Highlight */}
+    <section id="merits" className="max-w-6xl mx-auto px-6 py-12">
       <div className="mb-16 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-3xl p-8 text-center text-white shadow-2xl">
         <TrophyIcon />
-        <h3 className="text-3xl font-bold mb-2">MÄSTARE</h3>
-        <p className="text-xl mb-2">
-          Startmålvakt i Gothia SEF 2025, som vi vann
-        </p>
+        <h3 className="text-3xl font-bold mb-2">{t("merits.championTitle")}</h3>
+        <p className="text-xl mb-2">{t("merits.championDesc")}</p>
       </div>
 
-      {/* Merit Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all hover:scale-105">
-          <div className="flex items-center mb-4">
-            <div className="w-3 h-3 bg-yellow-500 rounded-full mr-3"></div>
-            <span className="text-sm font-semibold text-yellow-600">
-              INTERNATIONELLT
-            </span>
+        {gridItems.map((item: MeritItem, idx: number) => (
+          <div
+            key={idx}
+            className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all hover:scale-105"
+          >
+            <div className="flex items-center mb-4">
+              <div
+                className={`w-3 h-3 rounded-full mr-3 ${
+                  item.tag === "INTERNATIONELLT" || item.tag === "INTERNATIONAL"
+                    ? "bg-yellow-500"
+                    : item.tag === "SERIE" || item.tag === "LEAGUE"
+                    ? "bg-orange-500"
+                    : item.tag === "ELIT" || item.tag === "ELITE"
+                    ? "bg-blue-500"
+                    : item.tag === "UTTAGNING" || item.tag === "SELECTION"
+                    ? "bg-green-500"
+                    : "bg-purple-500"
+                }`}
+              ></div>
+              <span className="text-sm font-semibold text-gray-700">
+                {item.tag}
+              </span>
+            </div>
+            <h3 className="text-xl font-bold mb-3 text-gray-900">
+              {item.title}
+            </h3>
+            <p className="text-gray-600 mb-2">{item.description}</p>
+            <div className="text-sm text-gray-500">{item.info}</div>
           </div>
-          <h3 className="text-xl font-bold mb-3 text-gray-900">
-            Turnering i Barcelona
-          </h3>
-          <p className="text-gray-600 mb-2">
-            Turnering i Barcelona vid 13 års ålder, vann silver
-          </p>
-          <div className="text-sm text-gray-500">
-            13 år • Internationell erfarenhet
-          </div>
-        </div>
-
-        <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all hover:scale-105">
-          <div className="flex items-center mb-4">
-            <div className="w-3 h-3 bg-orange-500 rounded-full mr-3"></div>
-            <span className="text-sm font-semibold text-orange-600">SERIE</span>
-          </div>
-          <h3 className="text-xl font-bold mb-3 text-gray-900">
-            Svårserie Göteborg 2023
-          </h3>
-          <p className="text-gray-600 mb-2">3:a i svårserie Göteborg 2023</p>
-          <div className="text-sm text-gray-500">
-            Bronsmedalj • Regional tävling
-          </div>
-        </div>
-
-        <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all hover:scale-105">
-          <div className="flex items-center mb-4">
-            <div className="w-3 h-3 bg-gray-400 rounded-full mr-3"></div>
-            <span className="text-sm font-semibold text-gray-600">SERIE</span>
-          </div>
-          <h3 className="text-xl font-bold mb-3 text-gray-900">
-            Svårserie Göteborg 2024
-          </h3>
-          <p className="text-gray-600 mb-2">2:a i svårserie Göteborg 2024</p>
-          <div className="text-sm text-gray-500">
-            Silvermedalj • Förbättrad prestation
-          </div>
-        </div>
-
-        <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all hover:scale-105">
-          <div className="flex items-center mb-4">
-            <div className="w-3 h-3 bg-blue-500 rounded-full mr-3"></div>
-            <span className="text-sm font-semibold text-blue-600">ELIT</span>
-          </div>
-          <h3 className="text-xl font-bold mb-3 text-gray-900">
-            P16 Allsvenskan
-          </h3>
-          <p className="text-gray-600 mb-2">
-            Deltagit i 5 P16 Allsvenska matcher vid 14 års ålder 2024
-          </p>
-          <div className="text-sm text-gray-500">Elit nivå • 14 år</div>
-        </div>
-
-        <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all hover:scale-105">
-          <div className="flex items-center mb-4">
-            <div className="w-3 h-3 bg-green-500 rounded-full mr-3"></div>
-            <span className="text-sm font-semibold text-green-600">
-              UTTAGNING
-            </span>
-          </div>
-          <h3 className="text-xl font-bold mb-3 text-gray-900">
-            Göteborgs distriktslag
-          </h3>
-          <p className="text-gray-600 mb-2">Uttagen i Göteborgs distriktslag</p>
-          <div className="text-sm text-gray-500">
-            Regionalt erkännande • Elitnivå
-          </div>
-        </div>
-
-        <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all hover:scale-105">
-          <div className="flex items-center mb-4">
-            <div className="w-3 h-3 bg-purple-500 rounded-full mr-3"></div>
-            <span className="text-sm font-semibold text-purple-600">
-              AKTUELLT
-            </span>
-          </div>
-          <h3 className="text-xl font-bold mb-3 text-gray-900">
-            Ligacup P17 2025
-          </h3>
-          <p className="text-gray-600 mb-2">
-            Startat 2 Ligacupmatcher i P17 2025
-          </p>
-          <div className="text-sm text-gray-500">Startmålvakt • 15 år</div>
-        </div>
+        ))}
       </div>
     </section>
   );

@@ -4,8 +4,8 @@ import About from "./components/About";
 import Highlights from "./components/Highlights";
 import Gallery from "./components/Gallery";
 import Merit from "./components/Merit";
-// import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import LanguageSwitcher from "./components/LanguageSwitcher";
 
 export default function App() {
   const scrollToSection = (id: string) => {
@@ -19,12 +19,11 @@ export default function App() {
       <main>
         <Hero scrollToSection={scrollToSection} />
         <About />
-
         <Merit />
         <Highlights />
         <Gallery />
-        {/* <Contact /> */}
       </main>
+      <LanguageSwitcher />
       <Footer />
     </>
   );

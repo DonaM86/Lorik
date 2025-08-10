@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Camera, ChevronLeft, ChevronRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export interface GalleriBild {
   src: string;
@@ -12,6 +13,7 @@ interface Props {
 }
 
 const GalleriBilder: React.FC<Props> = ({ bilder, öppnaModal }) => {
+  const { t } = useTranslation();
   const [aktivBildIndex, setAktivBildIndex] = useState(0);
 
   const föregåendeBild = () => {
@@ -24,7 +26,6 @@ const GalleriBilder: React.FC<Props> = ({ bilder, öppnaModal }) => {
 
   if (bilder.length === 0) return null;
 
-  //  zoomar UT
   const zoomaUtTitlar = ["Fokuserad och redo", "Tränarsamtal", "Mot nästa mål"];
 
   return (
@@ -32,14 +33,13 @@ const GalleriBilder: React.FC<Props> = ({ bilder, öppnaModal }) => {
       <div className="flex items-center justify-between mb-8">
         <h3 className="text-2xl font-bold text-gray-900 flex items-center">
           <Camera className="h-6 w-6 mr-2 text-blue-600" />
-          Bilder
+          {t("gallery.title", "Galleri")}
         </h3>
         <div className="text-sm text-gray-500">
-          {aktivBildIndex + 1} av {bilder.length}
+          {aktivBildIndex + 1} {t("gallery.of", "av")} {bilder.length}
         </div>
       </div>
 
-      {/* Stor bild */}
       <div className="relative mb-6">
         <div className="relative aspect-video bg-gray-100 rounded-2xl overflow-hidden shadow-lg">
           <img
@@ -67,25 +67,23 @@ const GalleriBilder: React.FC<Props> = ({ bilder, öppnaModal }) => {
             </h4>
           </div>
 
-          {/* Pilar */}
           <button
             onClick={föregåendeBild}
             className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white p-2 rounded-full transition-colors"
-            aria-label="Föregående bild"
+            aria-label={t("gallery.prevImage", "Föregående bild")}
           >
             <ChevronLeft className="h-6 w-6" />
           </button>
           <button
             onClick={nästaBild}
             className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white p-2 rounded-full transition-colors"
-            aria-label="Nästa bild"
+            aria-label={t("gallery.nextImage", "Nästa bild")}
           >
             <ChevronRight className="h-6 w-6" />
           </button>
         </div>
       </div>
 
-      {/* Miniatyrbilder */}
       <div className="grid grid-cols-3 md:grid-cols-6 gap-3">
         {bilder.map((bild, index) => (
           <div
@@ -96,7 +94,7 @@ const GalleriBilder: React.FC<Props> = ({ bilder, öppnaModal }) => {
                 : "hover:shadow-md hover:scale-105"
             }`}
             onClick={() => setAktivBildIndex(index)}
-            aria-label={`Visa bild ${bild.titel}`}
+            aria-label={`${t("gallery.showImage", "Visa bild")} ${bild.titel}`}
           >
             <img
               src={bild.src}

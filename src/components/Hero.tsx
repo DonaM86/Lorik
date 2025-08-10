@@ -1,4 +1,5 @@
 import { MapPin, Calendar, Trophy } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 function TrophyIcon({ className }: { className?: string }) {
   return (
@@ -19,6 +20,8 @@ type HeroProps = {
 };
 
 export default function Hero({ scrollToSection }: HeroProps) {
+  const { t } = useTranslation();
+
   return (
     <section
       id="home"
@@ -34,35 +37,35 @@ export default function Hero({ scrollToSection }: HeroProps) {
               <div className="w-full h-full rounded-full bg-gray-200 flex items-center justify-center overflow-hidden shadow-lg">
                 <img
                   src="/images/lorik.jpeg"
-                  alt="Lorik - Målvakt i IFK Göteborgs U16-lag"
+                  alt={t("hero.name") + " - Målvakt i IFK Göteborgs U16-lag"}
                   className="w-full h-full object-cover"
                 />
               </div>
             </div>
             <div className="absolute -bottom-3 -right-3 bg-green-500 text-white text-xs px-3 py-1 rounded-full font-bold shadow-lg">
-              AKTIV
+              {t("hero.active", "AKTIV")}
             </div>
           </div>
 
           <div className="text-center md:text-left max-w-lg">
             <h1 className="text-5xl font-extrabold mb-3 drop-shadow-lg tracking-wide">
-              Lorik Myftari
+              {t("hero.name")}
             </h1>
             <p className="text-blue-300 text-xl mb-6 font-semibold drop-shadow-md">
-              Målvakt i IFK Göteborg.
+              {t("hero.position")}
             </p>
             <div className="flex flex-wrap justify-center md:justify-start gap-6 text-base font-medium text-blue-100 drop-shadow-md">
               <div className="flex items-center space-x-2">
                 <div className="flex items-center space-x-2">
                   <Calendar className="h-5 w-5" />
-                  <span>15 år</span>
+                  <span>{t("hero.age")}</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Trophy className="h-5 w-5" />
-                  <span>U16-nivå</span>
+                  <span>{t("hero.level")}</span>
                 </div>
                 <MapPin className="h-5 w-5" />
-                <span>Sverige</span>
+                <span>{t("hero.location")}</span>
               </div>
             </div>
 
@@ -71,13 +74,13 @@ export default function Hero({ scrollToSection }: HeroProps) {
                 onClick={() => scrollToSection("about")}
                 className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-xl font-bold tracking-wide shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl"
               >
-                Läs mer
+                {t("hero.readMore")}
               </button>
               <a
                 href="mailto:Dona.1986@hotmail.com"
                 className="border border-white/40 hover:bg-white/20 text-white px-10 py-4 rounded-xl font-bold tracking-wide shadow-md inline-block text-center transition-transform transform hover:scale-105 hover:shadow-lg"
               >
-                Kontakta mig
+                {t("hero.contactMe")}
               </a>
             </div>
           </div>
@@ -87,13 +90,10 @@ export default function Hero({ scrollToSection }: HeroProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
           <h2 className="text-5xl font-extrabold mb-6 text-white drop-shadow-xl tracking-tight">
-            Vägen framåt
+            {t("hero.forwardPathTitle")}
           </h2>
           <p className="text-xl lg:text-2xl mb-10 text-gray-300 leading-relaxed max-w-lg drop-shadow-md">
-            Jag är 15 år och spelar målvakt i IFK Göteborgs U16-lag. Med
-            erfarenhet från Gothia SEF och internationella turneringar tränar
-            jag målmedvetet för att nå min fulla potential och göra skillnad på
-            planen.
+            {t("hero.forwardPathDesc")}
           </p>
           <div className="flex flex-col sm:flex-row gap-6"></div>
         </div>
@@ -104,11 +104,10 @@ export default function Hero({ scrollToSection }: HeroProps) {
             <div className="bg-white/20 backdrop-blur-lg rounded-2xl p-8 sm:p-10 text-center">
               <TrophyIcon className="h-28 w-28 mx-auto mb-6 text-white drop-shadow-lg" />
               <h3 className="text-3xl font-extrabold mb-4 drop-shadow-lg">
-                Uppåtgående Mästare
+                {t("hero.trophyTitle")}
               </h3>
               <p className="text-blue-100 text-lg max-w-md mx-auto drop-shadow-md">
-                Från silver i Barcelona till Gothia SEF-mästare, en resa av
-                engagemang och utveckling.
+                {t("hero.trophyDesc")}
               </p>
             </div>
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
@@ -117,7 +116,7 @@ export default function Hero({ scrollToSection }: HeroProps) {
                   15
                 </div>
                 <div className="text-sm text-blue-200 uppercase tracking-wide">
-                  År gammal
+                  {t("hero.facts.age")}
                 </div>
               </div>
               <div className="bg-white/10 rounded-lg p-5 shadow-md hover:shadow-lg transition-shadow cursor-default">
@@ -125,7 +124,7 @@ export default function Hero({ scrollToSection }: HeroProps) {
                   U16
                 </div>
                 <div className="text-sm text-blue-200 uppercase tracking-wide">
-                  Spelnivå
+                  {t("hero.facts.level")}
                 </div>
               </div>
               <div className="bg-white/10 rounded-lg p-5 shadow-md hover:shadow-lg transition-shadow cursor-default">
@@ -133,7 +132,7 @@ export default function Hero({ scrollToSection }: HeroProps) {
                   IFK
                 </div>
                 <div className="text-sm text-blue-200 uppercase tracking-wide">
-                  Göteborg
+                  {t("hero.facts.club")}
                 </div>
               </div>
             </div>
