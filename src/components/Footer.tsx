@@ -31,7 +31,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="mailto:Dona.1986@hotmail.com"
+              href="mailto:lorikmyftari680@gmail.com"
               aria-label={t("footer.emailLabel")}
               className="text-gray-400 hover:text-white transition-transform transform hover:scale-110 cursor-pointer"
             >

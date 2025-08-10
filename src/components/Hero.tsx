@@ -77,7 +77,7 @@ export default function Hero({ scrollToSection }: HeroProps) {
                 {t("hero.readMore")}
               </button>
               <a
-                href="mailto:Dona.1986@hotmail.com"
+                href="mailto:lorikmyftari680@gmail.com"
                 className="border border-white/40 hover:bg-white/20 text-white px-10 py-4 rounded-xl font-bold tracking-wide shadow-md inline-block text-center transition-transform transform hover:scale-105 hover:shadow-lg"
               >
                 {t("hero.contactMe")}
