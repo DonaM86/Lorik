@@ -11,15 +11,13 @@ export default function Navigation({ scrollToSection }: NavigationProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeId, setActiveId] = useState("home");
 
-  // Lägg till id och nyckel för översättning
   const links = [
     { id: "home", labelKey: "home" },
-    { id: "about", labelKey: "about" },
+    { id: "about", labelKey: "aboutMenu" },
     { id: "merits", labelKey: "meritsMenu" },
     { id: "career", labelKey: "career" },
     { id: "gallery", labelKey: "gallery.title" },
   ];
-
   const handleClick = (id: string) => {
     setActiveId(id);
     scrollToSection(id);
