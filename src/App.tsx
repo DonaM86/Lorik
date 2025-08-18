@@ -6,6 +6,7 @@ import Gallery from "./components/Gallery";
 import Merit from "./components/Merit";
 import Footer from "./components/Footer";
 import LanguageSwitcher from "./components/LanguageSwitcher";
+import SEO from "./SEO";
 
 export default function App() {
   const scrollToSection = (id: string) => {
@@ -14,7 +15,7 @@ export default function App() {
   };
 
   return (
-    <>
+    <>   <SEO />
       <Navigation scrollToSection={scrollToSection} />
       <main>
         <Hero scrollToSection={scrollToSection} />

@@ -1,4 +1,9 @@
 {
+    "seo": {
+        "title": "Lorik Myftari – Goalkeeper Portfolio",
+        "description": "Lorik Myftari – 15-year-old goalkeeper at IFK Göteborg U16. Discover his career highlights, stats, and contact details for scouting opportunities.",
+        "keywords": "goalkeeper, football, IFK Göteborg, U16, youth, portfolio, scouting"
+    },
     "home": "Home",
     "aboutMenu": "About Me",
     "meritsMenu": "Merits",
@@ -31,14 +36,6 @@
             }
         }
     },
-    "description": "Explore Lorik's football journey through photos and videos",
-    "matchPhotos": "Match Photos",
-    "matchPhotosDesc": "Behind-the-scenes from development and training",
-    "matchHighlights": "Match Highlights",
-    "matchHighlightsDesc": "Best saves and important matches",
-    "photosCount": "{{count}}+ photos",
-    "videosCount": "{{count}}+ videos",
-    "closeModal": "Close modal",
     "aboutDetails": {
         "title": "About Lorik Myftari",
         "description": "A dedicated and talented young goalkeeper with a strong desire to develop and succeed at an elite level in football.",
@@ -72,7 +69,7 @@
     },
     "footer": {
         "name": "Lorik Myftari",
-        "title": "Elit goalkeeper",
+        "title": "Elite goalkeeper",
         "emailLabel": "Send email",
         "rightsReserved": "All rights reserved."
     },
