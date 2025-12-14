@@ -37,7 +37,7 @@ export default function Hero({ scrollToSection }: HeroProps) {
               <div className="w-full h-full rounded-full bg-gray-200 flex items-center justify-center overflow-hidden shadow-lg">
                 <img
                   src="/images/lorik.jpeg"
-                  alt={t("hero.name") + " - Målvakt i IFK Göteborgs U16-lag"}
+                  alt={t("hero.name") + " - Målvakt med akademierfarenhet"}
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -129,7 +129,7 @@ export default function Hero({ scrollToSection }: HeroProps) {
               </div>
               <div className="bg-white/10 rounded-lg p-5 shadow-md hover:shadow-lg transition-shadow cursor-default">
                 <div className="text-3xl font-extrabold text-white drop-shadow-md">
-                  IFK
+                  GK
                 </div>
                 <div className="text-sm text-blue-200 uppercase tracking-wide">
                   {t("hero.facts.club")}
