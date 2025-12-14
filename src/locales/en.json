@@ -15,8 +15,8 @@
         "matchPhotosDesc": "Behind-the-scenes from development and training",
         "matchHighlights": "Match Highlights",
         "matchHighlightsDesc": "Best saves and important matches",
-        "photosCount": "{{count}}+ photos",
-        "videosCount": "{{count}}+ videos",
+        "photos": "photos",
+        "videos": "videos",
         "closeModal": "Close modal",
         "zoomOutTitles": {
             "gothiaSEF2025": "Gothia SEF 2025",
@@ -27,13 +27,11 @@
             "nextGoal": "Towards the next goal",
             "afterVictory": "After the victory"
         },
-        "videos": {
-            "titles": {
-                "ifkKristianstad": "IFK Göteborg - Kristianstad FC",
-                "ifkElfsborg": "IFK Göteborg - Elfsborg IF",
-                "ifkMjallby": "IFK Göteborg - Mjällby AIF",
-                "gaisIfk2024": "Gais - IFK Göteborg, 2024"
-            }
+        "videoTitles": {
+            "ifkKristianstad": "IFK Göteborg - Kristianstad FC",
+            "ifkElfsborg": "IFK Göteborg - Elfsborg IF",
+            "ifkMjallby": "IFK Göteborg - Mjällby AIF",
+            "gaisIfk2024": "Gais - IFK Göteborg, 2024"
         }
     },
     "aboutDetails": {
@@ -163,7 +161,7 @@
                 "info": "Regional recognition • Elite level"
             },
             {
-                "tag": "CURRENT",
+                "tag": "ACHIEVEMENT",
                 "title": "League Cup P17 2025",
                 "description": "Started 2 League Cup matches in P17 2025",
                 "info": "Starting goalkeeper • 15 years old"

@@ -15,8 +15,8 @@
         "matchPhotosDesc": "Behind-the-scenes från utveckling och övningar",
         "matchHighlights": "Matchhöjdpunkter",
         "matchHighlightsDesc": "Bästa räddningar och viktiga matcher",
-        "photosCount": "{{count}}+ foton",
-        "videosCount": "{{count}}+ videor",
+        "photos": "foton",
+        "videos": "videor",
         "closeModal": "Stäng modal",
         "zoomOutTitles": {
             "gothiaSEF2025": "Gothia SEF 2025",
@@ -27,13 +27,11 @@
             "nextGoal": "Mot nästa mål",
             "afterVictory": "Efter segern"
         },
-        "videos": {
-            "titles": {
-                "ifkKristianstad": "IFK Göteborg - Kristianstad FC",
-                "ifkElfsborg": "IFK Göteborg - Elfsborg IF",
-                "ifkMjallby": "IFK Göteborg - Mjällby AIF",
-                "gaisIfk2024": "Gais - IFK Göteborg, 2024"
-            }
+        "videoTitles": {
+            "ifkKristianstad": "IFK Göteborg - Kristianstad FC",
+            "ifkElfsborg": "IFK Göteborg - Elfsborg IF",
+            "ifkMjallby": "IFK Göteborg - Mjällby AIF",
+            "gaisIfk2024": "Gais - IFK Göteborg, 2024"
         }
     },
     "aboutDetails": {
@@ -163,7 +161,7 @@
                 "info": "Regionalt erkännande • Elitnivå"
             },
             {
-                "tag": "AKTUELLT",
+                "tag": "PRESTATION",
                 "title": "Ligacup P17 2025",
                 "description": "Startat 2 Ligacupmatcher i P17 2025",
                 "info": "Startmålvakt • 15 år"
