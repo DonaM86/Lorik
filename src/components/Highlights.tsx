@@ -6,7 +6,6 @@ export default function Highlights() {
 
   return (
     <section id="career" className="py-20 bg-gray-50">
-      {" "}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -129,7 +128,7 @@ export default function Highlights() {
                   <div className="flex items-center mb-2">
                     <Calendar className="h-5 w-5 text-blue-600 mr-2" />
                     <span className="text-sm font-semibold text-blue-600">
-                      {t("highlights.milestones.3.period", "2025")}
+                      {t("highlights.milestones.3.period", "2025–2026")}{" "}
                     </span>
                   </div>
                   <h3 className="text-xl font-bold mb-2">
@@ -152,6 +151,38 @@ export default function Highlights() {
                   </div>
                 </div>
               </div>
+            </div>
+
+            {/* Milstolpe 5 */}
+            <div className="relative flex flex-col sm:flex-row items-center">
+              <div className="flex-1 sm:text-right sm:pr-8 px-4 py-3 max-w-xs sm:max-w-none">
+                <div className="bg-white rounded-xl p-6 shadow-lg">
+                  <div className="flex items-center justify-end mb-2">
+                    <Calendar className="h-5 w-5 text-blue-600 mr-2" />
+                    <span className="text-sm font-semibold text-blue-600">
+                      {t("highlights.milestones.4.period", "2026–")}
+                    </span>
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">
+                    {t(
+                      "highlights.milestones.4.title",
+                      "Började i Önnereds IK"
+                    )}
+                  </h3>
+                  <p className="text-gray-600">
+                    {t(
+                      "highlights.milestones.4.description",
+                      "Inledde sin nya resa som målvakt i Önnereds IK."
+                    )}
+                  </p>
+                  <div className="mt-3 flex items-center justify-end text-sm text-purple-600">
+                    <Users className="h-4 w-4 mr-1" />
+                    <span>{t("highlights.milestones.4.tag", "Ny klubb")}</span>
+                  </div>
+                </div>
+              </div>
+              <div className="absolute sm:relative left-1/2 transform -translate-x-1/2 sm:translate-x-0 sm:left-auto w-5 h-5 bg-blue-600 rounded-full"></div>
+              <div className="flex-1 sm:pl-8"></div>
             </div>
           </div>
         </div>

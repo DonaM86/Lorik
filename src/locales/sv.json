@@ -1,8 +1,8 @@
 {
     "seo": {
         "title": "Lorik Myftari – Målvaktsportfolio",
-        "description": "Lorik Myftari – 15-årig målvakt i IFK Göteborg U16. Upptäck hans karriärhöjdpunkter, statistik och kontaktuppgifter för scoutingmöjligheter.",
-        "keywords": "målvakt, fotboll, IFK Göteborg, U16, ungdom, portfolio, scouting"
+        "description": "Lorik Myftari – ung målvakt med erfarenhet från IFK Göteborg och GAIS. Upptäck hans karriärhöjdpunkter, statistik och kontaktuppgifter för scoutingmöjligheter.",
+        "keywords": "målvakt, fotboll, IFK Göteborg, GAIS, ungdom, portfolio, scouting"
     },
     "home": "Hem",
     "aboutMenu": "Om mig",
@@ -38,12 +38,12 @@
     },
     "aboutDetails": {
         "title": "Om Lorik Myftari",
-        "description": "En engagerad och talangfull ung målvakt med stark vilja att utvecklas och nå framgång på elitnivå inom fotbollen.",
+        "description": "En engagerad och talangfull ung målvakt med erfarenhet från IFK Göteborg och GAIS, som fortsätter utvecklas och strävar efter framgång på elitnivå.",
         "cards": {
             "playerOverAge": "Spelar över sin åldersklass",
-            "playerOverAgeDesc": "Endast 15 år gammal har Lorik etablerat sig i IFK Göteborgs U16-lag, där han visar prov på mognad och exceptionell skicklighet.",
-            "goalkeeper": "Målvakt i IFK Göteborg",
-            "goalkeeperDesc": "Som målvakt för IFK:s U16-lag visar Lorik konstant sina räddningsfärdigheter och ledarskap på planen.",
+            "playerOverAgeDesc": "Endast 15 år gammal har Lorik spelat i flera topplag som GAIS och IFK Göteborg, och visar prov på mognad och exceptionell skicklighet.",
+            "goalkeeper": "Målvakt med erfarenhet från topplag",
+            "goalkeeperDesc": "Lorik har spelat i IFK Göteborg och GAIS och utvecklar ständigt sina räddningsfärdigheter och ledarskap på planen.",
             "futureGoals": "Framtidsmål",
             "futureGoalsDesc": "Med en dröm om att bli professionell fotbollsspelare tränar Lorik målmedvetet varje dag för att nå den högsta nivån inom sporten."
         },
@@ -75,21 +75,21 @@
     },
     "hero": {
         "name": "Lorik Myftari",
-        "position": "Målvakt i IFK Göteborg.",
+        "position": "Målvakt med erfarenhet från GAIS och IFK Göteborg",
         "age": "15 år",
-        "level": "U16-nivå",
+        "level": "U17-nivå",
         "location": "Sverige",
         "active": "AKTIV",
         "readMore": "Läs mer",
         "contactMe": "Kontakta mig",
         "forwardPathTitle": "Vägen framåt",
-        "forwardPathDesc": "Jag är 15 år och spelar som målvakt i IFK Göteborgs U16-lag. Med erfarenhet från Gothia SEF och internationella turneringar tränar jag målmedvetet för att nå min fulla potential och göra skillnad på planen.",
+        "forwardPathDesc": "Jag är 15 år och fortsätter min resa som målvakt med erfarenhet från GAIS och IFK Göteborg. Med erfarenhet från Gothia SEF och internationella turneringar tränar jag målmedvetet för att nå min fulla potential.",
         "trophyTitle": "Uppåtgående Mästare",
         "trophyDesc": "Från silver i Barcelona till Gothia SEF-mästare, en resa av engagemang och utveckling.",
         "facts": {
             "age": "År gammal",
             "level": "Spelnivå",
-            "club": "Göteborg"
+            "club": "Önnereds IK"
         }
     },
     "highlights": {
@@ -115,10 +115,16 @@
                 "tag": "Erfarenhet"
             },
             {
-                "period": "2025",
-                "title": "Började i IFK Göteborg U16",
-                "description": "Inledde rollen som målvakt i IFK Göteborgs ungdomslag.",
+                "period": "2025–2026",
+                "title": "Spelade i IFK Göteborg U16",
+                "description": "Inledde rollen som målvakt i IFK Göteborgs ungdomslag under ett år.",
                 "tag": "Ny milstolpe"
+            },
+            {
+                "period": "2026–",
+                "title": "Började i Önnereds IK",
+                "description": "Inledde sin nya resa som målvakt i Önnereds IK.",
+                "tag": "Ny klubb"
             }
         ]
     },

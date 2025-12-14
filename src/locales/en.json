@@ -1,8 +1,8 @@
 {
     "seo": {
         "title": "Lorik Myftari – Goalkeeper Portfolio",
-        "description": "Lorik Myftari – 15-year-old goalkeeper at IFK Göteborg U16. Discover his career highlights, stats, and contact details for scouting opportunities.",
-        "keywords": "goalkeeper, football, IFK Göteborg, U16, youth, portfolio, scouting"
+        "description": "Lorik Myftari – young goalkeeper with experience from IFK Göteborg and GAIS. Discover his career highlights, stats, and contact details for scouting opportunities.",
+        "keywords": "goalkeeper, football, IFK Göteborg, GAIS, youth, portfolio, scouting"
     },
     "home": "Home",
     "aboutMenu": "About Me",
@@ -38,14 +38,14 @@
     },
     "aboutDetails": {
         "title": "About Lorik Myftari",
-        "description": "A dedicated and talented young goalkeeper with a strong desire to develop and succeed at an elite level in football.",
+        "description": "A dedicated and talented young goalkeeper with experience from IFK Göteborg and GAIS, continuing to develop and aiming for elite success.",
         "cards": {
             "playerOverAge": "Plays above his age group",
-            "playerOverAgeDesc": "Only 15 years old, Lorik has established himself in IFK Göteborg's U16 team, showing maturity and exceptional skill.",
-            "goalkeeper": "Goalkeeper at IFK Göteborg",
-            "goalkeeperDesc": "As goalkeeper for IFK's U16 team, Lorik consistently demonstrates his saving skills and leadership on the pitch.",
+            "playerOverAgeDesc": "Only 15 years old, Lorik has played in top youth teams such as GAIS and IFK Göteborg, showing maturity and exceptional skill.",
+            "goalkeeper": "Goalkeeper with experience from top clubs",
+            "goalkeeperDesc": "Lorik has played for IFK Göteborg and GAIS, continually developing his saving skills and leadership on the pitch.",
             "futureGoals": "Future goals",
-            "futureGoalsDesc": "With a dream to become a professional football player, Lorik trains purposefully every day to reach the highest level in the sport."
+            "futureGoalsDesc": "With a dream of becoming a professional footballer, Lorik trains purposefully every day to reach the highest level in the sport."
         },
         "funFacts": {
             "title": "Facts about Lorik",
@@ -75,21 +75,21 @@
     },
     "hero": {
         "name": "Lorik Myftari",
-        "position": "Goalkeeper at IFK Göteborg.",
+        "position": "Goalkeeper with experience from GAIS and IFK Göteborg",
         "age": "15 years old",
-        "level": "U16 level",
+        "level": "U17 level",
         "location": "Sweden",
         "active": "ACTIVE",
         "readMore": "Read more",
         "contactMe": "Contact me",
         "forwardPathTitle": "The Road Ahead",
-        "forwardPathDesc": "I am 15 years old and play as a goalkeeper for IFK Göteborg’s U16 team. With experience from Gothia SEF and international tournaments, I train purposefully to reach my full potential and make a difference on the pitch.",
+        "forwardPathDesc": "I am 15 years old and continue my journey as a goalkeeper with experience from GAIS and IFK Göteborg. With experience from Gothia SEF and international tournaments, I train purposefully to reach my full potential.",
         "trophyTitle": "Rising Champion",
         "trophyDesc": "From silver in Barcelona to Gothia SEF champion, a journey of commitment and growth.",
         "facts": {
             "age": "Years old",
             "level": "Playing level",
-            "club": "Göteborg"
+            "club": "Önnereds IK"
         }
     },
     "highlights": {
@@ -115,10 +115,16 @@
                 "tag": "Experience"
             },
             {
-                "period": "2025",
-                "title": "Started at IFK Göteborg U16",
-                "description": "Began role as goalkeeper in IFK Göteborg’s youth team.",
+                "period": "2025–2026",
+                "title": "Played for IFK Göteborg U16",
+                "description": "Began role as goalkeeper in IFK Göteborg’s youth team for one year.",
                 "tag": "New Milestone"
+            },
+            {
+                "period": "2026–",
+                "title": "Joined Önnereds IK",
+                "description": "Started a new journey as goalkeeper at Önnereds IK.",
+                "tag": "New Club"
             }
         ]
     },
